@@ -6,5 +6,10 @@ public class Cat implements Animal
 	{
 		System.out.println("Cat Meows..");
 	}
+	
+	public void eat()
 
+	{
+		System.out.println("Eats Speacial Food...");
+	}
 }

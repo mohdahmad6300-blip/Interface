@@ -12,6 +12,8 @@ public class AnimalMain
 		d.sound();
 		c.sound();
 		d.play();
+		d.eat();
+		c.eat();
 	}
 
 }
