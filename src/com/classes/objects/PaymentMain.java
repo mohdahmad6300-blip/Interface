@@ -10,13 +10,19 @@ public class PaymentMain {
 
 	public static void main(String[] args) {
 		
-		UpiPayment upi = new UpiPayment();
-		CardPayment card = new CardPayment();
-		CashPayment cash = new CashPayment();
-		
+		UpiPayment upi = new UpiPayment(1000);
 		upi.pay(500);
-		card.pay(800);
-		cash.pay(1000);
+		upi.refund(5000);
+		
+		System.out.println("==================================");
+		
+		CardPayment card = new CardPayment(500);
+		card.pay(100);
+		
+		System.out.println("==================================");
+		
+		CashPayment cash = new CashPayment(600);
+		cash.pay(10);
 
 	}
 
